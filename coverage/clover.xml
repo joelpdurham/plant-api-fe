@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1581976546866" clover="3.2.0">
-  <project timestamp="1581976546866" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1581977475142" clover="3.2.0">
+  <project timestamp="1581977475142" name="All files">
+    <metrics statements="11" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="0" elements="18" coveredelements="5" complexity="0" loc="11" ncloc="11" packages="3" files="4" classes="4"/>
+    <package name="src">
+      <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+      <file name="store.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/store.js">
+        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
+        <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="5" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="App.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/components/App.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="Search.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/components/Search.js">
+        <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.hooks">
+      <metrics statements="5" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="useSearchApi.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/hooks/useSearchApi.js">
+        <metrics statements="5" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
