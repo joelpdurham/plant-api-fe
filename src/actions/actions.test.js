@@ -1,4 +1,4 @@
-import { fetchResults, FETCH_PLANTS } from "./actions";
+import { fetchResults, FETCH_PLANTS } from './actions';
 
 jest.mock('../services/getPlants.js');
 

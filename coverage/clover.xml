@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1581979090265" clover="3.2.0">
-  <project timestamp="1581979090265" name="All files">
-    <metrics statements="22" coveredstatements="12" conditionals="5" coveredconditionals="4" methods="9" coveredmethods="4" elements="36" coveredelements="20" complexity="0" loc="22" ncloc="22" packages="6" files="7" classes="7"/>
+<coverage generated="1581980773587" clover="3.2.0">
+  <project timestamp="1581980773587" name="All files">
+    <metrics statements="29" coveredstatements="14" conditionals="10" coveredconditionals="4" methods="13" coveredmethods="4" elements="52" coveredelements="22" complexity="0" loc="29" ncloc="29" packages="6" files="7" classes="7"/>
     <package name="src">
       <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
       <file name="store.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/store.js">
@@ -58,9 +58,16 @@
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="7" coveredstatements="2" conditionals="5" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="getPlants.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/services/getPlants.js">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="7" coveredstatements="2" conditionals="5" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="3" type="cond" truecount="0" falsecount="1"/>
+        <line num="18" count="0" type="stmt"/>
       </file>
     </package>
   </project>
