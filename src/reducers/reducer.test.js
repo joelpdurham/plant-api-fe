@@ -1,4 +1,5 @@
-import { FETCH_PLANTS } from "../actions/actions";
+import { FETCH_PLANTS } from '../actions/actions';
+import { reducer } from './reducer';
 
 describe('REDUCER TESTS', () => {
   it('handle fetching plants', () => {
