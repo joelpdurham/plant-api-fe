@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1581978619140" clover="3.2.0">
-  <project timestamp="1581978619140" name="All files">
-    <metrics statements="22" coveredstatements="10" conditionals="5" coveredconditionals="4" methods="9" coveredmethods="1" elements="36" coveredelements="15" complexity="0" loc="22" ncloc="22" packages="5" files="6" classes="6"/>
+<coverage generated="1581979090265" clover="3.2.0">
+  <project timestamp="1581979090265" name="All files">
+    <metrics statements="22" coveredstatements="12" conditionals="5" coveredconditionals="4" methods="9" coveredmethods="4" elements="36" coveredelements="20" complexity="0" loc="22" ncloc="22" packages="6" files="7" classes="7"/>
     <package name="src">
       <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
       <file name="store.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/store.js">
@@ -10,13 +10,13 @@
       </file>
     </package>
     <package name="src.actions">
-      <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="actions.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/actions/actions.js">
-        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components">
@@ -55,6 +55,12 @@
         <line num="8" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="10" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.services">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="getPlants.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/services/getPlants.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
   </project>
