@@ -7,13 +7,18 @@ const request = (path, method, body) => {
     credentials: 'include',
     body: body && JSON.stringify(body)
   })
-    .then(res => Promise.all([res.ok, res.json()]))
-    .then(([ok, json]) => {
-      if(!ok) throw json;
-      return json;
+    .then(res => Promise.all([res.ok, res]))
+    .then(([ok, res]) => {
+      if(!ok) throw res;
+      console.log(res);
+      return res.json();
     });
 };
 
-export const getPlants = (search = '') => {
-  return request(`/api/v1/plants/${search}`, 'GET');
-};
+// export const getPlants = (search = '') => {
+//   return request(`/api/v1/plants/${search}`, 'GET');
+// };
+
+export const getPlants = (search) => {
+  return request(`/users/${search}`, 'GET');
+}
