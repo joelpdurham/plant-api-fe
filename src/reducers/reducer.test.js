@@ -19,5 +19,17 @@ describe('REDUCER TESTS', () => {
       }]
     });
 
+    it('can handle action it doesnt recognize', () => {
+      const action = { type: 'FERTILIZER', payload: 12 };
+      const initialState = { 
+        plants: [{
+          id: 123,
+          commonName: 'Rose'
+        }]
+      };
+      const newState = reducer(initialState, action);
+      expect(newState).toEqual(initialState);
+    });
+
   });
 });
