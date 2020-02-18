@@ -1,5 +1,5 @@
 import { FETCH_PLANTS } from '../actions/actions';
-import { reducer } from './reducer';
+import { plantReducer } from './plantReducer';
 
 describe('REDUCER TESTS', () => {
   it('handle fetching plants', () => {
@@ -11,7 +11,7 @@ describe('REDUCER TESTS', () => {
       }]
     };
     const initialState = { plants: null };
-    const newState = reducer(initialState, action);
+    const newState = plantReducer(initialState, action);
     expect(newState).toEqual({ 
       plants: [{
         id: 123,
@@ -28,7 +28,7 @@ describe('REDUCER TESTS', () => {
         commonName: 'Rose'
       }]
     };
-    const newState = reducer(initialState, action);
+    const newState = plantReducer(initialState, action);
     expect(newState).toEqual(initialState);
   });
 

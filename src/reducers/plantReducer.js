@@ -5,7 +5,7 @@ const initialState = {
   plants: fakeFlower
 };
 
-export const reducer = (state = initialState, action) => {
+export const plantReducer = (state = initialState, action) => {
   switch(action.type) {
     case FETCH_PLANTS:
       return { ...state, plants: action.payload };
