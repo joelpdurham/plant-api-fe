@@ -1,0 +1,31 @@
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+// import { useLocation, useHistory } from 'react-router-dom';
+
+const AuthForm = ({ onSubmit, label }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = uesState('');
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    onSubmit(email, password)
+    // redirect user to appropriate page
+  }
+
+  return (
+    <>
+      <h2>{ label }</h2>
+      <form onSubmit={handleSubmit}>
+        <input type="text" value={email} onChange={({ target }) => setEmail(target.value)} />
+        <input type="password" value={password} onChange={({ target }) => setPassword(target.value)} />
+      </form>
+    </>
+  );
+};
+
+AuthForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  label: PropTypes.string.isRequired
+}
+
+export default AuthForm;
