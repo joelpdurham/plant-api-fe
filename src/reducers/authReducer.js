@@ -7,7 +7,7 @@ export default function reducer(state, action) {
     case SET_SESSION:
       return { ...state, loading: false, user: action.payload };
     case SET_SESSION_ERROR:
-      return { ...state, loading: false, user: action.payload }; 
+      return { ...state, loading: false, error: action.payload }; 
     case SET_SESSION_DONE:
       return { ...state, loading: false };
     default:

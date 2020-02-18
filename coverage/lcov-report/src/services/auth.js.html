@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/components/App.js</title>
+    <title>Code coverage report for src/services/auth.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/components</a> App.js</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/services</a> auth.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>4/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">36.36% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>4/11</span>
             </div>
         
             
@@ -85,14 +85,8 @@
 <a name='L26'></a><a href='#L26'>26</a>
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -103,47 +97,50 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const request = <span class="fstat-no" title="function not covered" >(p</span>ath, method, body) =&gt; {
+<span class="cstat-no" title="statement not covered" >  return fetch(`${process.env.API_URL}${path}`, {</span>
+    method,
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    credentials: 'include',
+    body: body &amp;&amp; JSON.stringify(body)
+  })
+    .then(<span class="fstat-no" title="function not covered" >re</span>s =&gt; <span class="cstat-no" title="statement not covered" >Promise.all([res.ok, res.json()]))</span>
+    .then(<span class="fstat-no" title="function not covered" >([</span>ok, json]) =&gt; {
+<span class="cstat-no" title="statement not covered" >      if(!ok) <span class="cstat-no" title="statement not covered" >throw json;</span></span>
+<span class="cstat-no" title="statement not covered" >      return json;</span>
+    });
+};
 &nbsp;
-import { Loading } from './Loading';
-import { Search } from './Search';
-import { Plants } from './Plants/Plants';
-import { PlantDetails } from './Plants/PlantDetails';
-import Signup from './auth/Signup';
-import Login from './auth/Login';
+export const getSignup = <span class="fstat-no" title="function not covered" >(e</span>mail, password) =&gt; {
+<span class="cstat-no" title="statement not covered" >  return request('/api/v1/auth/signup', 'POST', { email, password });</span>
+};
 &nbsp;
-import { useSelector } from 'react-redux';
-import { toGetLoading } from '../selectors/selectors';
+export const getLogin = <span class="fstat-no" title="function not covered" >(e</span>mail, password) =&gt; {
+<span class="cstat-no" title="statement not covered" >  return request('/api/v1/auth/login', 'POST', { email, password });</span>
+};
 &nbsp;
-export default function <span class="fstat-no" title="function not covered" >App(</span>) {
-  const loading = <span class="cstat-no" title="statement not covered" >useSelector(toGetLoading);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
-    &lt;&gt;
-      { loading ? &lt;Loading /&gt; : &lt;&gt;&lt;/&gt; }
-      &lt;Router&gt;
-        &lt;Search /&gt;
-        &lt;Route exact path='/plants' component={Plants}/&gt;
-        &lt;Route path='/plants/:id' component={PlantDetails} /&gt;
-        &lt;Route exact path='/signup' component={Signup} /&gt;
-        &lt;Route path='/login' component={Login} /&gt;
-      &lt;/Router&gt;
-    &lt;/&gt;
-  );
+export const getVerify = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >  return request('/api/v1/auth/verify', 'GET');</span>
 }
+;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

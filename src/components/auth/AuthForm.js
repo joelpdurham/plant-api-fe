@@ -10,7 +10,7 @@ const AuthForm = ({ onSubmit, label, link }) => {
   const handleSubmit = event => {
     event.preventDefault();
     onSubmit(email, password);
-    // redirect user to appropriate page
+    // redirect user to appropriate page (see demo from class 41)
   };
 
   return (

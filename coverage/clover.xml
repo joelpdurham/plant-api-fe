@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1581985084806" clover="3.2.0">
-  <project timestamp="1581985084806" name="All files">
-    <metrics statements="55" coveredstatements="33" conditionals="15" coveredconditionals="9" methods="22" coveredmethods="8" elements="92" coveredelements="50" complexity="0" loc="55" ncloc="55" packages="8" files="15" classes="15"/>
+<coverage generated="1582066919350" clover="3.2.0">
+  <project timestamp="1582066919350" name="All files">
+    <metrics statements="135" coveredstatements="64" conditionals="28" coveredconditionals="13" methods="57" coveredmethods="12" elements="220" coveredelements="89" complexity="0" loc="135" ncloc="135" packages="9" files="24" classes="24"/>
     <package name="src">
       <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
-      <file name="fakeFlower.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/fakeFlower.js">
+      <file name="fakeFlower.js" path="/Users/home/alchemy/career/plant-api-fe/src/fakeFlower.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="6" type="stmt"/>
+        <line num="1" count="1" type="stmt"/>
       </file>
-      <file name="store.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/store.js">
+      <file name="store.js" path="/Users/home/alchemy/career/plant-api-fe/src/store.js">
         <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="0" coveredmethods="0"/>
         <line num="5" count="4" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
     <package name="src.actions">
-      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
-      <file name="actions.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/actions/actions.js">
+      <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="8"/>
+      <file name="actions.js" path="/Users/home/alchemy/career/plant-api-fe/src/actions/actions.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="4" count="6" type="stmt"/>
         <line num="6" count="6" type="stmt"/>
@@ -24,7 +24,18 @@
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
       </file>
-      <file name="loadingActions.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/actions/loadingActions.js">
+      <file name="authActions.js" path="/Users/home/alchemy/career/plant-api-fe/src/actions/authActions.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+      </file>
+      <file name="loadingActions.js" path="/Users/home/alchemy/career/plant-api-fe/src/actions/loadingActions.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="7" type="stmt"/>
         <line num="2" count="7" type="stmt"/>
@@ -34,16 +45,16 @@
     </package>
     <package name="src.components">
       <metrics statements="7" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="App.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/components/App.js">
+      <file name="App.js" path="/Users/home/alchemy/career/plant-api-fe/src/components/App.js">
         <metrics statements="2" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
       </file>
-      <file name="Loading.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/components/Loading.js">
+      <file name="Loading.js" path="/Users/home/alchemy/career/plant-api-fe/src/components/Loading.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="3" count="1" type="stmt"/>
       </file>
-      <file name="Search.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/components/Search.js">
+      <file name="Search.js" path="/Users/home/alchemy/career/plant-api-fe/src/components/Search.js">
         <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
@@ -52,41 +63,120 @@
       </file>
     </package>
     <package name="src.components.Plants">
-      <metrics statements="8" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-      <file name="Plant.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/components/Plants/Plant.js">
+      <metrics statements="10" coveredstatements="4" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="Plant.js" path="/Users/home/alchemy/career/plant-api-fe/src/components/Plants/Plant.js">
         <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="11" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
       </file>
-      <file name="Plants.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/components/Plants/Plants.js">
-        <metrics statements="5" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="PlantDetails.js" path="/Users/home/alchemy/career/plant-api-fe/src/components/Plants/PlantDetails.js">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="Plants.js" path="/Users/home/alchemy/career/plant-api-fe/src/components/Plants/Plants.js">
+        <metrics statements="5" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="6" count="2" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="10" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="src.hooks">
-      <metrics statements="7" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <file name="useSearchApi.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/hooks/useSearchApi.js">
-        <metrics statements="7" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
+    <package name="src.components.auth">
+      <metrics statements="16" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="AuthForm.js" path="/Users/home/alchemy/career/plant-api-fe/src/components/auth/AuthForm.js">
+        <metrics statements="10" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="6" count="1" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+      <file name="Login.js" path="/Users/home/alchemy/career/plant-api-fe/src/components/auth/Login.js">
+        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="Signup.js" path="/Users/home/alchemy/career/plant-api-fe/src/components/auth/Signup.js">
+        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.hooks">
+      <metrics statements="41" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="16" coveredmethods="0"/>
+      <file name="auth.js" path="/Users/home/alchemy/career/plant-api-fe/src/hooks/auth.js">
+        <metrics statements="32" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="0"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+      </file>
+      <file name="useSearchApi.js" path="/Users/home/alchemy/career/plant-api-fe/src/hooks/useSearchApi.js">
+        <metrics statements="9" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.reducers">
-      <metrics statements="11" coveredstatements="11" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
-      <file name="index.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/reducers/index.js">
+      <metrics statements="17" coveredstatements="16" conditionals="12" coveredconditionals="11" methods="3" coveredmethods="3"/>
+      <file name="authReducer.js" path="/Users/home/alchemy/career/plant-api-fe/src/reducers/authReducer.js">
+        <metrics statements="6" coveredstatements="5" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="4" count="5" type="cond" truecount="4" falsecount="1"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/home/alchemy/career/plant-api-fe/src/reducers/index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
-      <file name="loadingReducer.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/reducers/loadingReducer.js">
+      <file name="loadingReducer.js" path="/Users/home/alchemy/career/plant-api-fe/src/reducers/loadingReducer.js">
         <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="3" count="5" type="stmt"/>
         <line num="7" count="5" type="cond" truecount="1" falsecount="0"/>
@@ -95,35 +185,55 @@
         <line num="12" count="1" type="stmt"/>
         <line num="14" count="13" type="stmt"/>
       </file>
-      <file name="plantReducer.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/reducers/plantReducer.js">
+      <file name="plantReducer.js" path="/Users/home/alchemy/career/plant-api-fe/src/reducers/plantReducer.js">
         <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="4" count="5" type="stmt"/>
-        <line num="8" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="9" count="14" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="13" count="13" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="7" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="13" type="stmt"/>
       </file>
     </package>
     <package name="src.selectors">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <file name="selectors.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/selectors/selectors.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
+      <file name="authSelectors.js" path="/Users/home/alchemy/career/plant-api-fe/src/selectors/authSelectors.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="selectors.js" path="/Users/home/alchemy/career/plant-api-fe/src/selectors/selectors.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="8" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="getPlants.js" path="/Users/joelpatrickdurham/alchemy/career-track/week-09/plant-api-fe/src/services/getPlants.js">
-        <metrics statements="8" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <metrics statements="19" coveredstatements="6" conditionals="10" coveredconditionals="0" methods="10" coveredmethods="0"/>
+      <file name="auth.js" path="/Users/home/alchemy/career/plant-api-fe/src/services/auth.js">
+        <metrics statements="11" coveredstatements="4" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+      </file>
+      <file name="getPlants.js" path="/Users/home/alchemy/career/plant-api-fe/src/services/getPlants.js">
+        <metrics statements="8" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="1" count="5" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="22" count="5" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="19" count="0" type="stmt"/>
       </file>
     </package>
   </project>

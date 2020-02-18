@@ -4,7 +4,7 @@ export const setSessionLoading = () => ({
 });
 
 export const SET_SESSION = 'SET_SESSION';
-export const setSession = () => ({
+export const setSession = (user) => ({
   type: SET_SESSION,
   payload: user
 });
@@ -15,7 +15,7 @@ export const setSessionDone = () => ({
 });
 
 export const SET_SESSION_ERROR = 'SET_SESSION_ERROR';
-export const setSessionError = () => ({
+export const setSessionError = (err) => ({
   type: SET_SESSION_ERROR,
   payload: err
 });
