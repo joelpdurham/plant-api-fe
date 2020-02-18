@@ -15,8 +15,8 @@ export default function App() {
   return (
     <>
       { loading ? <Loading /> : <></> }
-      <Search />
       <Router>
+        <Search />
         <Route exact path='/plants' component={Plants}/>
         <Route path='/plants/:id' component={PlantDetails} />
       </Router>

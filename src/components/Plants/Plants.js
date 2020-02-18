@@ -6,9 +6,9 @@ import { Plant } from './Plant';
 export const Plants = () => {
   const plants = useSelector(toGetPlants);
 
-  const plantElemets = plants.map(plant => (
+  const plantElemets = plants ? plants.map(plant => (
     <Plant key={plant._id} id={plant._id} name={plant.commonName} image={plant.image} />
-  ));
+  )) : (<></>);
 
   return (
     <ul>

@@ -1,8 +1,7 @@
 import { FETCH_PLANTS } from '../actions/actions';
-import { fakeFlower } from '../fakeFlower';
 
 const initialState = {
-  plants: fakeFlower
+  plants: null
 };
 
 export const plantReducer = (state = initialState, action) => {
