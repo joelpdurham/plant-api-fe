@@ -35,6 +35,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = (email, password) => {
     dispatch(setSessionLoading());
+    console.log('inside login function in auth hook');
     return getLogin(email, password)
       .then(user => {
         dispatch(setSession(user));
@@ -54,19 +55,19 @@ export const AuthProvider = ({ children }) => {
 export const useSignup = () => {
   const { signup } = useContext(AuthContext);
   return signup;
-}
+};
 
 export const useLogin = () => {
-  const { Login } = useContext(AuthContext);
-  return Login;
-}
+  const { login } = useContext(AuthContext);
+  return login;
+};
 
 export const useIsAuthenticated = () => {
   const { state } = useContext(AuthContext);
   return isAuthenticated(state);
-}
+};
 
 export const useIsLoading = () => {
   const { state } = useContext(AuthContext);
   return isLoading(state);
-}
+};

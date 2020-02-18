@@ -3,8 +3,8 @@ import { useSignup } from '../../hooks/auth';
 import AuthForm from './AuthForm';
 
 const Signup = () => {
-  const login = useLogin();
-  return <AuthForm onSubmit={signup} label="Login" />
+  const signup = useSignup();
+  return <AuthForm onSubmit={signup} label="Signup" link="login" />
 };
 
 export default Signup;
