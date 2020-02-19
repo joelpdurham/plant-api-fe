@@ -17,8 +17,9 @@ const AuthForm = ({ onSubmit, label, link }) => {
     <>
       <h2>{ label }</h2>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={email} onChange={({ target }) => setEmail(target.value)} />
-        <input type="password" value={password} onChange={({ target }) => setPassword(target.value)} />
+        <input type="text" value={email} onChange={({ target }) => setEmail(target.value)} />Email
+        <input type="password" value={password} onChange={({ target }) => setPassword(target.value)} />Password
+        <button>{label}</button>
       </form>
       <Link to={`/${link}`}>
         <button>{link}</button>

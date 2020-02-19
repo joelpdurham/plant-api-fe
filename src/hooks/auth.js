@@ -35,7 +35,6 @@ export const AuthProvider = ({ children }) => {
 
   const login = (email, password) => {
     dispatch(setSessionLoading());
-    console.log('inside login function in auth hook');
     return getLogin(email, password)
       .then(user => {
         dispatch(setSession(user));

@@ -4,7 +4,7 @@ import AuthForm from './AuthForm';
 
 const Signup = () => {
   const signup = useSignup();
-  return <AuthForm onSubmit={signup} label="Signup" link="login" />
+  return <AuthForm onSubmit={signup} label="Signup" link="login" />;
 };
 
 export default Signup;

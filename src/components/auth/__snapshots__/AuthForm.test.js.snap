@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthForm component matches a snapshot 1`] = `
+<Fragment>
+  <h2>
+    login
+  </h2>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      type="password"
+      value=""
+    />
+  </form>
+  <Link
+    to="/signup"
+  >
+    <button>
+      signup
+    </button>
+  </Link>
+</Fragment>
+`;
